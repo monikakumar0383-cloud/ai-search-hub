@@ -683,7 +683,12 @@
                 }
             });
         });
-    </script>
+   function handleSearch(query) {
+    if (!query) return;
+    // Redirect directly to AI web search (Perplexity) or Google
+    window.location.href = `https://www.perplexity.ai/search?q=${encodeURIComponent(query)}`;
+}
+                                </script>
 </body>
 </html>
 
